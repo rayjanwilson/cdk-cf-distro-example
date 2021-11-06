@@ -6,6 +6,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "deploy": "npm run build && cdk deploy --ci --require-approval never",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
